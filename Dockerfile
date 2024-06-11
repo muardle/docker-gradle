@@ -1,8 +1,8 @@
 FROM eclipse-temurin:21-jdk-alpine
 
-ENV GRADLE_VERSION="8.7"
+ENV GRADLE_VERSION="8.8"
 
-ENV GRADLE_SHA256="544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d"
+ENV GRADLE_SHA256="a4b4158601f8636cdeeab09bd76afb640030bb5b144aafe261a5e8af027dc612"
 
 RUN wget --no-verbose https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip && \
   echo "${GRADLE_SHA256} gradle-${GRADLE_VERSION}-bin.zip" | sha256sum -c && \
